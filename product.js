@@ -6,7 +6,7 @@ logoutIcon.addEventListener("click", function() {
     var confirmLogout = confirm("Click OK if you want to log out.");
     if (confirmLogout) {
         alert("Logged out");
-        window.location.href ="shopLogin.html";
+        window.location.href ="index.html";
     }
 });
 
