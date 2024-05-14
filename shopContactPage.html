@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Main Navbar -->
+        <div id="header">
+            <nav>
+                <img src="assets/logo/logo.png" class="logo">
+                <ul>
+                    <li><a href="shopHomePage.html">Home</a></li>
+                    <li><a href="shopAboutPage.html">About</a></li>
+                    <li><a href="shopProducts.html">Products</a></li>
+                    <li><button id="contact">Contact Us!</button></li>
+                    <li><i class="fa fa-shopping-cart"></i></li>
+                    <li><i class="fa fa-sign-out"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="row input-container">
+            <div class="col-xs-12 col-md-4">
+                <div class="styled-input wide">
+                    <input type="text" required />
+                    <label>Name</label>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="styled-input">
+                    <input type="email" required />
+                    <label>Email</label>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <textarea required></textarea>
+                    <label>Message</label>
+                </div>
+            </div>
+            <button>Send Message</button>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    /*logout*/
+
+    var logoutIcon = document.querySelector(".fa-sign-out");
+
+    logoutIcon.addEventListener("click", function () {
+        var confirmLogout = confirm("Click OK if you want to log out.");
+        if (confirmLogout) {
+            alert("Logged out");
+            window.location.href = "shopLogin.html";
+        }
+    });
+</script>
+
+</html>

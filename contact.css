@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair-Display', serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: #ffff;
+    margin-top: 100px;
+    font-family: 'Playfair Display', serif;
+    background-color: #000000;
+}
+#header {
+    width: 100%;
+    height: 30%;
+}
+nav {
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BFBFBF;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo {
+    width: 145px;
+    margin-left: 30px;
+}
+
+nav ul {
+    margin-right: 15px; 
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+nav ul li a , nav ul li i{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    position:relative;
+}
+
+nav ul li a::after, nav ul li i::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #D4AF37;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after, nav ul li i:hover::after {
+    width: 100%;
+}
+
+/*--------------Button---------------*/
+
+button {
+    color: black;
+    border-radius: 10px;
+    background-color: #D4AF37;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+
+/**CONTACT**/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 12px;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+.styled-input {
+    float: left;
+    width: 650px;
+    margin: 1rem ;
+    position: relative;
+    border-radius: 4px;
+}
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 25px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2e2d2d;
+    color: rgb(188, 176, 176);
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+textarea {
+    width: 100%;
+    min-height: 12em;
+}
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+button:hover {
+    background-color: #949090;
+    color:black;
+}
+
+.container button {
+    position: absolute; 
+    right: 28%;
+    top:90%;
+    margin-bottom: 20px;
+    width: 10%;
+    height: 6%;
+    font-weight: bold;
+}
